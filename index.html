@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Universas Gym</title>
+  <meta name="description" content="Powers Gym — Puthyatheru. Strength training, classes, and community fitness in Kerala." />
+  <title>Powers Gym — Puthyatheru</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,7 +12,7 @@
 
 <!-- ===================== NAV =====================  -->
 <nav>
-  <a href="#hero" class="nav-logo">UNIVERSALS<span> GYM</span></a>
+  <a href="#hero" class="nav-logo">POWERS<span> GYM</span><span class="nav-location" aria-hidden="true"> · Puthyatheru</span></a>
   <ul class="nav-links">
     <li><a href="#classes">Classes</a></li>
     <li><a href="#pricing">Pricing</a></li>
@@ -22,30 +23,34 @@
 
 <!-- ===================== HERO ===================== -->
 <section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-lines"></div>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
+  <div class="hero-lines" aria-hidden="true"></div>
   <div class="hero-content">
-    <div class="hero-tag">Kollam's Premier Fitness Club</div>
+    <div class="hero-tag"><span class="hero-tag-loc">Puthyatheru</span><span class="hero-tag-sep">Kerala's neighbourhood fitness hub</span></div>
     <h1 class="hero-title">
-      FORGE<br>YOUR<br><span class="gold">LIMITS.</span>
+      <span class="hero-line" data-i="1">POWER</span><br>
+      <span class="hero-line" data-i="2">YOUR</span><br>
+      <span class="hero-line gold" data-i="3">POSSIBLE.</span>
     </h1>
-    <p class="hero-sub">Where strength meets discipline. Push beyond what you thought possible — every rep, every session, every day.</p>
+    <p class="hero-sub">Train where locals lift heavy and lift each other up — modern equipment, guided classes, and a crew that shows up for Puthyatheru.</p>
     <div class="hero-actions">
       <a href="#pricing" class="btn-primary">Start Today</a>
       <a href="#classes" class="btn-outline">View Classes</a>
     </div>
   </div>
   <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-num">12+</div>
+    <div class="stat" style="--d:0.1s">
+      <div class="stat-num" data-target="12">0</div>
       <div class="stat-label">Classes</div>
     </div>
-    <div class="stat">
-      <div class="stat-num">500+</div>
+    <div class="stat" style="--d:0.2s">
+      <div class="stat-num" data-target="500">0</div>
       <div class="stat-label">Members</div>
     </div>
-    <div class="stat">
-      <div class="stat-num">10+</div>
+    <div class="stat" style="--d:0.3s">
+      <div class="stat-num" data-target="10">0</div>
       <div class="stat-label">Trainers</div>
     </div>
   </div>
@@ -57,7 +62,7 @@
   <div class="classes-header fade-in">
     <div class="section-tag">What We Offer</div>
     <h2 class="section-title">CLASSES & SCHEDULE</h2>
-    <p>From high-intensity training to mindful recovery — we have programs for every fitness level and goal.</p>
+    <p>From high-intensity training to mindful recovery — programs for every level, right here in Puthyatheru.</p>
   </div>
 
   <div class="classes-grid fade-in">
@@ -71,31 +76,31 @@
       <div class="class-icon">🔥</div>
       <div class="class-name">HIIT Blast</div>
       <div class="class-time">Tue · Thu · Sat — 7:00 AM & 5:00 PM</div>
-      <div class="class-desc">High-intensity interval training designed to maximize calorie burn and boost metabolism.</div>
+      <div class="class-desc">High-intensity intervals to maximise calorie burn and boost metabolism.</div>
     </div>
     <div class="class-card">
       <div class="class-icon">🥊</div>
       <div class="class-name">Combat Fitness</div>
       <div class="class-time">Tue · Thu — 8:00 AM & 7:00 PM</div>
-      <div class="class-desc">Boxing-inspired cardio that builds coordination, speed, and full-body endurance.</div>
+      <div class="class-desc">Boxing-inspired cardio for coordination, speed, and full-body endurance.</div>
     </div>
     <div class="class-card">
       <div class="class-icon">🧘</div>
       <div class="class-name">Yoga & Flexibility</div>
       <div class="class-time">Mon · Wed · Sat — 7:30 AM</div>
-      <div class="class-desc">Restore mobility, reduce stress, and enhance performance with mindful movement.</div>
+      <div class="class-desc">Restore mobility, reduce stress, and move better every session.</div>
     </div>
     <div class="class-card">
       <div class="class-icon">🚴</div>
       <div class="class-name">Cycle Rush</div>
       <div class="class-time">Mon – Fri — 7:00 AM & 6:30 PM</div>
-      <div class="class-desc">High-energy indoor cycling sessions set to pumping music. Burn big, ride hard.</div>
+      <div class="class-desc">High-energy indoor cycling — burn big, ride hard.</div>
     </div>
     <div class="class-card">
       <div class="class-icon">💪</div>
       <div class="class-name">Body Sculpt</div>
       <div class="class-time">Wed · Fri · Sun — 9:00 AM</div>
-      <div class="class-desc">Tone and define with resistance training, bands, and targeted isolation exercises.</div>
+      <div class="class-desc">Tone and define with resistance work, bands, and targeted exercises.</div>
     </div>
   </div>
 
@@ -248,7 +253,7 @@
 <section id="contact">
   <div class="fade-in">
     <div class="section-tag">Get In Touch</div>
-    <h2 class="section-title">FIND US</h2>
+    <h2 class="section-title">FIND US IN PUTHYATHERU</h2>
   </div>
   <div class="contact-grid">
     <div class="contact-info fade-in">
@@ -256,7 +261,7 @@
         <div class="info-icon">📍</div>
         <div>
           <div class="info-label">Location</div>
-          <div class="info-value">Universal Gym<br>Main Road, Kollam<br>Kerala, India — 691001</div>
+          <div class="info-value">Powers Gym<br>Puthyatheru, Kerala<br>India</div>
         </div>
       </div>
       <div class="info-item">
@@ -270,7 +275,7 @@
         <div class="info-icon">✉️</div>
         <div>
           <div class="info-label">Email</div>
-          <div class="info-value">info@universalgym.in</div>
+          <div class="info-value">hello@powersgymputhyatheru.in</div>
         </div>
       </div>
       <div class="info-item">
@@ -318,8 +323,8 @@
 
 <!-- ===================== FOOTER ===================== -->
 <footer>
-  <div class="footer-logo">UNIVERSAL<span> GYM</span></div>
-  <div class="footer-copy">© 2026 Universal Gym, Kollam. All rights reserved.</div>
+  <div class="footer-logo">POWERS<span> GYM</span> <span class="footer-loc">Puthyatheru</span></div>
+  <div class="footer-copy">© 2026 Powers Gym, Puthyatheru. All rights reserved.</div>
   <div class="footer-links">
     <a href="#hero">Home</a>
     <a href="#classes">Classes</a>

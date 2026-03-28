@@ -18,6 +18,45 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// ===================== HERO STAT COUNT-UP =====================
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function animateStat(el) {
+  const target = parseInt(el.dataset.target, 10);
+  if (Number.isNaN(target)) return;
+  const suffix = el.dataset.suffix || '+';
+  const duration = reduceMotion ? 0 : 1400;
+  const start = performance.now();
+
+  function frame(now) {
+    const t = duration === 0 ? 1 : Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const n = Math.round(eased * target);
+    el.textContent = n + (t >= 1 ? suffix : '');
+    if (t < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+const statsObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const nums = e.target.querySelectorAll('.stat-num[data-target]');
+      nums.forEach((el) => {
+        if (el.dataset.done) return;
+        el.dataset.done = '1';
+        animateStat(el);
+      });
+      statsObserver.unobserve(e.target);
+    });
+  },
+  { threshold: 0.25 }
+);
+
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) statsObserver.observe(heroStats);
+
 // ===================== CONTACT FORM SUBMIT =====================
 const form = document.querySelector('.contact-form');
 
