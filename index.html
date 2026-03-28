@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Powers Gym — Puthyatheru. Strength training, classes, and community fitness in Kerala." />
   <title>Powers Gym — Puthyatheru</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700&family=JetBrains+Mono:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- ===================== NAV =====================  -->
 <nav>
-  <a href="#hero" class="nav-logo">POWERS<span> GYM</span><span class="nav-location" aria-hidden="true"> · Puthyatheru</span></a>
+  <a href="#hero" class="nav-brand">
+    <img src="assets/powers-gym-logo.png" class="nav-brand-logo" width="200" height="64" alt="Powers Gym — Ladies &amp; Gents Fitness Center, Puthyatheru" decoding="async" />
+  </a>
   <ul class="nav-links">
     <li><a href="#classes">Classes</a></li>
+    <li><a href="#achievements">Achievements</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#contact" class="nav-cta">Join Now</a></li>
@@ -27,8 +30,40 @@
   <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
   <div class="hero-lines" aria-hidden="true"></div>
+  <div class="hero-emblem-ring" aria-hidden="true"></div>
+
+  <div class="hero-gym-visual" aria-hidden="true">
+    <svg class="hero-gym-svg" viewBox="0 0 440 320" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <g class="hero-rack" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round">
+        <line x1="64" y1="28" x2="64" y2="292"/>
+        <line x1="376" y1="28" x2="376" y2="292"/>
+        <line x1="52" y1="108" x2="76" y2="108" stroke="#FFD600" stroke-width="6"/>
+        <line x1="364" y1="108" x2="388" y2="108" stroke="#FFD600" stroke-width="6"/>
+      </g>
+      <g class="hero-barbell-unit">
+        <line class="hero-bar-sleeve" x1="92" y1="106" x2="70" y2="106" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+        <line x1="100" y1="106" x2="340" y2="106" stroke="#FFD600" stroke-width="11" stroke-linecap="round"/>
+        <line class="hero-bar-sleeve" x1="348" y1="106" x2="370" y2="106" stroke="#141414" stroke-width="9" stroke-linecap="round"/>
+        <g class="hero-plate-stack hero-plate-stack--L">
+          <rect x="38" y="86" width="24" height="40" rx="3" fill="#0d0d0d" stroke="#FFD600" stroke-width="2"/>
+          <rect x="22" y="94" width="14" height="24" rx="2" fill="#1a1a1a"/>
+        </g>
+        <g class="hero-plate-stack hero-plate-stack--R">
+          <rect x="378" y="86" width="24" height="40" rx="3" fill="#0d0d0d" stroke="#FFD600" stroke-width="2"/>
+          <rect x="404" y="94" width="14" height="24" rx="2" fill="#1a1a1a"/>
+        </g>
+      </g>
+      <g class="hero-chalk-dust" opacity="0.35" fill="#FFD600">
+        <circle cx="120" cy="220" r="2"/>
+        <circle cx="280" cy="240" r="1.5"/>
+        <circle cx="200" cy="260" r="1.2"/>
+        <circle cx="310" cy="200" r="1.8"/>
+      </g>
+    </svg>
+  </div>
+
   <div class="hero-content">
-    <div class="hero-tag"><span class="hero-tag-loc">Puthyatheru</span><span class="hero-tag-sep">Kerala's neighbourhood fitness hub</span></div>
+    <div class="hero-tag"><span class="hero-tag-loc">Puthyatheru</span><span class="hero-tag-sep">Ladies &amp; Gents Fitness Center</span></div>
     <h1 class="hero-title">
       <span class="hero-line" data-i="1">POWER</span><br>
       <span class="hero-line" data-i="2">YOUR</span><br>
@@ -59,6 +94,9 @@
 
 <!-- ===================== CLASSES ===================== -->
 <section id="classes">
+  <div class="classes-brand-bar fade-in" aria-hidden="true">
+    <span class="brand-bar brand-bar--yellow">POWERS</span><span class="brand-bar brand-bar--black">GYM</span>
+  </div>
   <div class="classes-header fade-in">
     <div class="section-tag">What We Offer</div>
     <h2 class="section-title">CLASSES & SCHEDULE</h2>
@@ -177,6 +215,151 @@
   </div>
 </section>
 
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section id="achievements">
+  <div class="achv-inner">
+    <div class="achv-intro fade-in">
+      <div class="section-tag">Hall of wins</div>
+      <h2 class="section-title">ACHIEVEMENTS</h2>
+      <p class="achv-intro-copy">Medals, milestones, and members who trained here — from first rep to podium.</p>
+      <div class="achv-stack-row" aria-label="Focus areas">
+        <span class="achv-pill">Community</span>
+        <span class="achv-pill achv-pill--accent">Competition</span>
+        <span class="achv-pill">Coaching</span>
+        <span class="achv-pill">Growth</span>
+      </div>
+    </div>
+
+    <div class="achv-section fade-in">
+      <div class="achv-section-head">
+        <span class="achv-h2-prefix">##</span>
+        <h3 class="achv-h2">At a glance</h3>
+      </div>
+      <p class="achv-section-desc">Numbers that mirror the work put in on the floor.</p>
+      <div class="achv-metrics">
+        <article class="achv-metric-card">
+          <div class="achv-label">Years in Puthyatheru</div>
+          <div class="achv-metric-val">8+</div>
+          <div class="achv-metric-note">Since we opened</div>
+        </article>
+        <article class="achv-metric-card">
+          <div class="achv-label">State &amp; district medals</div>
+          <div class="achv-metric-val">42</div>
+          <div class="achv-metric-note">Powerlifting · bodybuilding · athletics</div>
+        </article>
+        <article class="achv-metric-card">
+          <div class="achv-label">Members coached to stage</div>
+          <div class="achv-metric-val">120+</div>
+          <div class="achv-metric-note">From trial class to meet day</div>
+        </article>
+        <article class="achv-metric-card">
+          <div class="achv-label">Community events</div>
+          <div class="achv-metric-val">15</div>
+          <div class="achv-metric-note">Runs, camps, open days</div>
+        </article>
+      </div>
+    </div>
+
+    <div class="achv-section achv-section--inset fade-in">
+      <div class="achv-section-head">
+        <span class="achv-h2-prefix">##</span>
+        <h3 class="achv-h2">Milestone timeline</h3>
+      </div>
+      <p class="achv-section-desc">How the gym leveled up over the years.</p>
+      <ol class="achv-timeline">
+        <li class="achv-timeline-item">
+          <span class="achv-timeline-badge">2018</span>
+          <div class="achv-timeline-body">
+            <h4 class="achv-h3">Grand opening</h4>
+            <p>Launched in Puthyatheru with a full free-weight floor and cardio zone.</p>
+            <div class="achv-tags"><span class="achv-tag">Launch</span><span class="achv-tag">Facility</span></div>
+          </div>
+        </li>
+        <li class="achv-timeline-item">
+          <span class="achv-timeline-badge">2020</span>
+          <div class="achv-timeline-body">
+            <h4 class="achv-h3">State podium sweep</h4>
+            <p>Three members finished top three at state powerlifting — coach-led blocks.</p>
+            <div class="achv-tags"><span class="achv-tag">Competition</span><span class="achv-tag">Team</span></div>
+          </div>
+        </li>
+        <li class="achv-timeline-item">
+          <span class="achv-timeline-badge">2022</span>
+          <div class="achv-timeline-body">
+            <h4 class="achv-h3">Expanded timetable</h4>
+            <p>HIIT, combat, and early strength slots — 12+ classes weekly.</p>
+            <div class="achv-tags"><span class="achv-tag">Programs</span><span class="achv-tag">Community</span></div>
+          </div>
+        </li>
+        <li class="achv-timeline-item">
+          <span class="achv-timeline-badge">2024–26</span>
+          <div class="achv-timeline-body">
+            <h4 class="achv-h3">Regional spotlight</h4>
+            <p>Local features, inter-club meets, youth strength workshops.</p>
+            <div class="achv-tags"><span class="achv-tag">Media</span><span class="achv-tag">Partnerships</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="achv-section fade-in">
+      <div class="achv-section-head">
+        <span class="achv-h2-prefix">##</span>
+        <h3 class="achv-h2">Recent wins</h3>
+      </div>
+      <p class="achv-section-desc">Swap in your real meets — these are sample highlights.</p>
+      <div class="achv-card-grid">
+        <article class="achv-doc-card">
+          <header class="achv-doc-card-head">
+            <span class="achv-doc-card-eyebrow">Powerlifting</span>
+            <span class="achv-doc-card-pill">Gold</span>
+          </header>
+          <h4 class="achv-doc-card-title">State open — 75 kg</h4>
+          <p class="achv-doc-card-text">National-qualifying total after a 16-week on-platform prep block.</p>
+          <footer class="achv-doc-card-foot">
+            <code class="achv-code-inline">squat / bench / deadlift</code>
+          </footer>
+        </article>
+        <article class="achv-doc-card">
+          <header class="achv-doc-card-head">
+            <span class="achv-doc-card-eyebrow">Bodybuilding</span>
+            <span class="achv-doc-card-pill achv-doc-card-pill--muted">Top 5</span>
+          </header>
+          <h4 class="achv-doc-card-title">District novice classic</h4>
+          <p class="achv-doc-card-text">First-time competitor from our posing clinic — top five placement.</p>
+          <footer class="achv-doc-card-foot">
+            <code class="achv-code-inline">prep · nutrition · posing</code>
+          </footer>
+        </article>
+        <article class="achv-doc-card">
+          <header class="achv-doc-card-head">
+            <span class="achv-doc-card-eyebrow">Community</span>
+            <span class="achv-doc-card-pill">Impact</span>
+          </header>
+          <h4 class="achv-doc-card-title">Health camp day</h4>
+          <p class="achv-doc-card-text">Partnered with local orgs — screenings and drives with members.</p>
+          <footer class="achv-doc-card-foot">
+            <code class="achv-code-inline">events · outreach</code>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <div class="achv-callout-wrap fade-in">
+      <div class="achv-callout">
+        <div class="achv-callout-bar" aria-hidden="true"></div>
+        <div class="achv-callout-inner">
+          <div class="achv-callout-label">Member note</div>
+          <blockquote class="achv-quote">
+            “Trial class in 2023 — coaches mapped meet prep like a training spec. On the platform nine months later.”
+          </blockquote>
+          <div class="achv-quote-meta">— Powers Gym member, Puthyatheru</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== PRICING ===================== -->
 <section id="pricing">
   <div class="fade-in">
@@ -257,6 +440,9 @@
   </div>
   <div class="contact-grid">
     <div class="contact-info fade-in">
+      <div class="contact-logo-wrap">
+        <img src="assets/powers-gym-logo.png" class="contact-logo" width="220" height="72" alt="" decoding="async" />
+      </div>
       <div class="info-item">
         <div class="info-icon">📍</div>
         <div>
@@ -323,11 +509,15 @@
 
 <!-- ===================== FOOTER ===================== -->
 <footer>
-  <div class="footer-logo">POWERS<span> GYM</span> <span class="footer-loc">Puthyatheru</span></div>
+  <div class="footer-brand-col">
+    <img src="assets/powers-gym-logo.png" class="footer-brand-logo" width="200" height="72" alt="Powers Gym" decoding="async" />
+    <div class="footer-tagline">Ladies &amp; Gents Fitness Center · Puthyatheru</div>
+  </div>
   <div class="footer-copy">© 2026 Powers Gym, Puthyatheru. All rights reserved.</div>
   <div class="footer-links">
     <a href="#hero">Home</a>
     <a href="#classes">Classes</a>
+    <a href="#achievements">Achievements</a>
     <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </div>

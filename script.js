@@ -11,10 +11,11 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
+  if (!nav) return;
   if (window.scrollY > 60) {
-    nav.style.background = 'rgba(10,10,10,0.97)';
+    nav.style.background = 'rgba(0,0,0,0.97)';
   } else {
-    nav.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.95), transparent)';
+    nav.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.92), transparent)';
   }
 });
 
